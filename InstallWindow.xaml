@@ -1,0 +1,18 @@
+﻿<Window x:Class="Aottg2Launcher.InstallWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Aottg2Launcher"
+        mc:Ignorable="d"
+        Title="Install" ResizeMode="NoResize" WindowStyle="None" BorderThickness="1,1,1,1" WindowStartupLocation="CenterOwner" MouseDown="Window_MouseDown" SizeToContent="WidthAndHeight" Icon="Images/GameIcon.png">
+    <Grid>
+        <Button x:Name="InstallButton" Content="Install" HorizontalAlignment="Left" Margin="86,120,0,20" VerticalAlignment="Top" Width="60" Height="24" FontSize="13.333" Click="InstallButtonClick"/>
+        <Button x:Name="CancelButton" Content="Cancel" HorizontalAlignment="Left" Margin="20,120,0,20" VerticalAlignment="Top" Width="60" Height="24" FontSize="13.333" Click="CancelButtonClick"/>
+        <TextBox x:Name="DirectoryText" VerticalContentAlignment="Center" HorizontalAlignment="Left" Margin="20,20,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="253" Height="24"/>
+        <Button x:Name="ChangeButton" Content="Change" HorizontalAlignment="Right" Margin="280,20,20,0" VerticalAlignment="Top" Width="60" Height="24" FontSize="13.333" Click="ChangeButtonClick"/>
+        <RadioButton x:Name="Windows64Radio" Content="64-Bit" HorizontalAlignment="Left" Margin="20,60,0,0" VerticalAlignment="Top"/>
+        <RadioButton x:Name="Windows32Radio" Content="32-Bit" HorizontalAlignment="Left" Margin="20,85,0,0" VerticalAlignment="Top"/>
+
+    </Grid>
+</Window>
